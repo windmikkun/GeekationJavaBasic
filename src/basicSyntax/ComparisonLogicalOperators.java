@@ -24,12 +24,11 @@ public class ComparisonLogicalOperators {
 		//3.
 		int x = 15;
 		int y = 24;
+		String result;
 		
-		if ( x >= 0 && y % 2 == 0 ) 
-			System.out.println(true);
-		else
-			System.out.println(false);
-		
+		//三項演算子
+		result = ( x >= 0 && y % 2 == 0 )? "true": "false";
+		System.out.println(result);
 		
 		//4.
 		boolean hasPermission = false;
