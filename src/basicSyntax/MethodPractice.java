@@ -11,44 +11,35 @@ public class MethodPractice {
 		int mult = multNumber(a, b);
 		int div = divNumber(a, b);	
 		
-		output(a, b, add, sub, mult, div);
+		int[] results = {add, sub, mult, div};
 		
+		for (int i = 0; i < results.length; i++) {
+            output(results[i]);
+        }
 		
 
 	}
 	//1.
 	public static int addNumber(int a, int b) {
-		int addResult = a + b;
-		
-		return addResult;
+		return a + b;
 	}
 	//2.
 	public static int subNumber(int a, int b) {
-		int subResult = a - b;
+		return a - b;
 		
-		return subResult;
 	}
 	//3.
 	public static int multNumber(int a, int b) {
-		int multResult = a * b;
-		
-		return multResult;
+		return  a * b;
 	}
 	//4. 
 	public static int divNumber(int a, int b) {
-		int divResult = a / b;
-		
-		return divResult;
+		return a / b;
 	}
 	//5.
-	public static void output(int a, int b, int addNumber, int subNumber, int multNumber, int divNumber) {
-		int[] result = { addNumber, subNumber, multNumber, divNumber};
-		
-		for(int i = 0; i < result.length; i++) {
+	public static void output(int result) {
 			String msg = "計算結果は{%d}です。";
-			String msgOut = String.format(msg, result[i]);
+			String msgOut = String.format(msg, result);
 			System.out.println(msgOut);
-			
-		}
 	}
 }
