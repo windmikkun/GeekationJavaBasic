@@ -3,12 +3,13 @@ package basicSyntax;
 public class Main {
 
 	public static void main(String[] args) {
-	System.out.println("こんにちは");
-	System.out.println("私の名前は");
-	System.out.println("Geek君です。");
-	
-	//文字列は+で連結することができます
-	System.out.println("こんにちは" +"私の名前は" + "Geek君です。");
+	int age = 10;
+	double height = 131.5;
+	int num1 = 30;
+	int num2 = 80;
+
+	GeekIntroduction.greeting(age, height);
+	GeekIntroduction.specialSkill(num1, num2);
 	}
 
 }
