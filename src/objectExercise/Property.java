@@ -50,7 +50,6 @@ public class Property {
 	 System.out.println("物件所有者名:" + ownerName);
 	 System.out.println("物件価格:" + price + "円");
 	 System.out.println("物件種別:" + type );
-	 System.out.println("=============================");
 	}
 }
 
